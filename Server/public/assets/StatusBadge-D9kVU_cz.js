@@ -1,1 +1,0 @@
-import{j as s}from"./index-DHssuwdf.js";const n=({status:e})=>{const r=(e||"").toLowerCase(),t=r.includes("short")?"bg-green-100 text-green-800 px-2 py-1 rounded":r.includes("reject")?"bg-red-100 text-red-800 px-2 py-1 rounded":"bg-yellow-100 text-yellow-800 px-2 py-1 rounded";return s.jsx("span",{className:t,children:e})};export{n as S};
