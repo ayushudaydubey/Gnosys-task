@@ -15,15 +15,15 @@ app.use(express.json());
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-app.use(express.static(path.join(__dirname, '../public')))
+app.use(express.static(path.join(__dirname, 'public')))
 
 app.use("/api/candidates", candidateRoutes);
 app.use("/api/screening", screeningRoutes);
 app.use("/api/rounds", roundRoutes);
 app.use("/api/dashboard", dashboardRoutes);
 
-app.get("*name",(req,res)=>{
-  res.sendFile(path.join(__dirname,"../public/index.html"))
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
 
 
